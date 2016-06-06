@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>国内首个正在改变世界的区块链黑科技公司，你来吗？</title>
+    <link href="recruit/bootstrap.min.css" rel="stylesheet" />
+    <link href="recruit/jquery.fullPage.css" rel="stylesheet" />
+    <script src="recruit/jquery-2.1.4.min.js"></script>
+    <script src="recruit/jquery.fullPage.min.js"></script>
+    <script src="recruit/jquery.hotkeys.js"></script>
+    <link rel="shortcut icon" href="recruit/favicon.ico">
+
+    <style>
+        .section { background-color:#fff; background-image:url('recruit/bg.png'); background-size:cover; text-align: center; }
+        .title { position:absolute; width:100%; z-index:10; left:0; top:8%; }
+        .title h2 { line-height:1.5;}
+        .bottom-img { position:absolute; z-index:0; bottom:0; left:0; width:100%; }
+        .top-img { position:absolute; top:8%; left:10%; width:80%;}
+        .logo { bottom:30%; left:8%; width:82%; }
+        .we { top:50% }
+        .first { font-size:18px; position:absolute; width:85%; left:12%; bottom:10%; text-align:left; line-height:1.5 }
+        .first div { margin:12px 0 }
+        .h5title { position:absolute; top:40%; left:8%; width:80% }
+        .h5title h2 { line-height:2; }
+        .xz { font-size:18px; margin-top:150px; line-height:2; letter-spacing:2px }
+        .li { font-size:18px; margin-top:-100px; padding-left:10%; text-align:left; line-height:1.5 }
+        .xz span { font-size:22px; margin:0 2px;  color:#01a4e7  }
+        .world { position:absolute; width:100%; text-align:center; bottom:10%; line-height:1.5 }
+        .world2 { position:absolute; width:100%; text-align:center; bottom:20%; line-height:1.5 }
+        #gl, #js { opacity:0; transition:.7s }
+        #img_gl, #img_nr { opacity:0; transition:1s }
+        embed { position:absolute; left:-10px; bottom:-38px; z-index:10; opacity:0; border-radius:10px }
+        .qr { width: 200px; opacity: 0; transition: all .5s; }
+        .qrdiv { height: 210px; }
+        .website { width: 240px; font-size:18px; text-align:left; z-index: 10; position: absolute; left: 50%; margin-left: -120px; bottom: 30px; }
+        body { font-family: Helvetica,"BBAlpha Sans","S60 Sans","Hiragino Sans GB",Arial,"Microsoft YaHei",SimHei,STXihei,SimSun,"WenQuanYi Micro Hei",sans-serif !important; }
+        button { position:absolute; left:0; bottom:0; border-radius:10px; height:40px; width:50px; background-color:aliceblue; z-index:100; border:1px solid #ddebf6 }
+        #recruit { max-width:540px; margin:auto;}
+        @media only screen and (max-width:480px) {
+            @-ms-viewport { width: 480px; }
+        }
+        @media only screen and (max-height:440px) {
+            .website { bottom: 10px; }
+            .bottom-img { position:absolute; z-index:0; bottom:0; left:auto; right:0; width:60%; }
+            .title { top:30%; left:10%; width:auto }
+            .foto { display:none }
+            .top-img { margin-top:-100px }
+            .h5title { bottom:30%; top:auto }
+            .title.we { bottom:20%; top:auto; width:100%; text-align:center; left:0 }
+            .first { line-height:1; font-size:14px; bottom:10px }
+            .xz { line-height:1.5; }
+            .title.cs { width:100%; left:0; position:absolute; top:10% }
+            .li { margin-top:0; position:absolute; left:0; bottom:10px }
+            .ifyou { top:10%; left:0; width:100% }
+            #recruit { max-width:667px }
+        }
+        @media only screen and (max-height:400px) {
+            .first { display:none }
+            .h5title { bottom:20%; top:auto }
+            .title { top:10%; left:10%; width:auto }
+            .title.we { bottom:30px; top:auto; width:100%; text-align:center; left:0 }
+            .top-img.oaa { top: 15% }
+            .hi{display:none}
+            .title.cs { width:100%; left:0; position:absolute; top:5% }
+            .website { font-size:14px; margin-left:-90px }
+        }
+
+    </style>
+</head>
+<body style="background-color:#ddd;">
+    <audio id="audio" autoplay="autoplay" controls="controls" loop="loop" preload="auto" style="display:none" src="recruit/Indigo.mp3">*你的浏览器不支持audio标签</audio>
+    <!--<button onclick="change()">||</button>-->
+    
+    <div id="recruit">
+
+        <div class="section">
+            <div class="h5title">
+                <span style="font-size:30px; letter-spacing:5px">Onchain/小蚁<br />招募创始团队</span>
+            </div>
+            <img class="top-img" src="recruit/wx.png" style="width:80%; top:0; left:8%" />
+            <img class="bottom-img foto" src="recruit/photo.png" style="width:92%; bottom:0; left:4%" />
+        </div>
+
+        <div class="section">
+            <div class="title">
+                <h2>有什么执着<br />可以直击未来？</h2>
+            </div>
+            <img class="bottom-img" src="recruit/qbs.png" style="max-width:100%" />
+        </div>
+
+        <div class="section">
+            <div class="title">
+                <h2>有什么技术<br />可以改变世界？</h2>
+            </div>
+            <img class="bottom-img" src="recruit/musk.png" style="max-width:100%" />
+        </div>
+
+        <div class="section">
+            <div class="title we">
+                <span style="font-size:21px">我们站在全球的起跑线上</span>
+                <h2 style="letter-spacing:6px">区块链颠覆当下</h2>
+            </div>
+            <img class="top-img" src="recruit/wx.png" style="width:80%; top:0; left:8%" />
+            <!--<div class="world2">
+                <h5>传&nbsp;·&nbsp;递&nbsp;·&nbsp;价&nbsp;·&nbsp;值</h5>
+            </div>-->
+        </div>
+
+        <div class="section">
+            
+            <img class="top-img oaa" src="recruit/Onchain_AntShares.png" style="width:95%; left:0; margin-top:30px" />
+            <div class="first">
+                <div><i>中国唯一</i><br />原创开源代码的技术原创者</div>
+                <div><i>中国唯一</i><br />发布共识机制的技术领跑者</div>
+                <div><i>中国唯一</i><br />最多券商报道的行业代表者</div>
+                <div><i>中国唯一</i><br />机构投资+社区众筹的行业佼佼者</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="title cs">
+                <h2 style="color:#01a4e7">成为onchain的<br />创始团队成员</h2>
+            </div>
+            <div class="xz">
+                <span>高于行业30%</span>的薪资<br />
+                可变现的<span>股权激励</span><br />
+                一流的<span>办公环境</span>与区位<br />
+                与<span>智商160+</span>的聪明人共事<br />
+                用区块链技术<span>改变世界</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title ifyou">
+                <h3>如果你精于以下任意一项：</h3><br />
+            </div>
+            <img class="bottom-img" src="recruit/nr2.png" style="max-width:100%" />
+            <img id="img_nr" class="bottom-img" src="recruit/nr.png" style="max-width:100%" />
+            <div class="li">
+                ● 区块链技术<br />
+                ● 云/分布式系统/一致性算法<br />
+                ● 密码学和计算机安全<br />
+                ● 金融IT架构设计<br />
+                ● UI设计与交互<br />
+                那么你是我们在寻找的<br />
+                <h3 id="js">技术牛人~~</h3>
+            </div>
+            
+        </div>
+
+        <div class="section">
+            <div class="title ifyou">
+                <h3>如果你精于以下任意一项：</h3><br />
+            </div>
+            
+            <img class="bottom-img" src="recruit/gl2.png" style="max-width:100%" />
+            <img id="img_gl" class="bottom-img" src="recruit/gl.png" style="max-width:100%;" />
+            <div class="li">
+                ● 面向金融机构的商务拓展<br />
+                ● 深刻的行业分析和写作能力<br />
+                ● 品牌、市场与公共关系<br />
+                ● 互联网社区的运营发展<br />
+                那么你是我们在寻找的<br />
+                <h3 id="gl">管理达人~~</h3>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="title ifyou hi">
+                <h3>CEO/CTO等你Say Hi！</h3>
+            </div>
+            <br />
+            <div style="font-size:16px; margin-bottom:10px">技术牛人请私聊CTO张铮文</div>
+            <div class="qrdiv">
+                <img class="qr" id="z" src="recruit/z.png" />
+            </div>
+            <div style="font-size:16px;">E-mail: <a href="mailto:erik@onchain.com">erik@onchain.com</a></div>
+            <!--<div class="website">
+                管理达人请看下一页
+            </div>-->
+        </div>
+
+        <div class="section">
+            <div class="title ifyou hi">
+                <h3>CEO/CTO等你Say Hi！</h3>
+            </div>
+            <br />
+            <div style="font-size:16px; margin-bottom:10px">管理达人请私聊CEO达鸿飞</div>
+            <div class="qrdiv">
+                <img class="qr" id="d" src="recruit/d.png" />
+            </div>
+            <div style="font-size:16px">E-mail: <a href="mailto:dahongfei@onchain.com">dahongfei@onchain.com</a></div>
+
+        </div>
+
+        <div class="section">
+            <img class="top-img" src="recruit/wx.png" style="width:80%; top:0; left:8%" />
+            <div class="h5title">
+                <span style="font-size:28px">加入onchain，改变世界</span>
+            </div>
+            <div class="website">
+                公司：<a target="_blank" href="http://www.onchain.com">www.onchain.com</a><br />
+                小蚁：<a target="_blank" href="https://www.antshares.com">www.antshares.com</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function ()
+        {
+            $('#recruit').fullpage({
+                scrollingSpeed: 400,
+                easing: "linear",
+                'navigation': true,
+                afterLoad: function (anchorLink, index)
+                {
+                    if (index == 1)
+                    {
+                    }
+                    if (index == 7)
+                    {
+                        $("#js").css("opacity", 1);
+                        $("#img_nr").delay(100).css("opacity", 1);
+                    }
+                    if (index == 8)
+                    {
+                        $("#gl").css("opacity", 1);
+                        $("#img_gl").delay(100).css("opacity", 1);
+                    }
+                    if (index == 9)
+                    {
+                        $('#z').css("opacity", 1);
+                        //$('#z').css("width", "200px")
+                    }
+                    if (index == 10)
+                    {
+                        $('#d').css("opacity", 1);
+                        //$('#d').css("width", "200px")
+                    }
+                },
+                onLeave: function (index, direction)
+                {
+                    if (index == 1)
+                    {
+                    }
+                    if (index == 7)
+                    {
+                        $("#js").delay(100).css("opacity", 0);
+                        $("#img_nr").delay(100).css("opacity", 0);
+                    }
+                    if (index == 8)
+                    {
+                        $("#gl").delay(100).css("opacity", 0);
+                        $("#img_gl").delay(100).css("opacity", 0);
+                    }
+                    if (index == 9)
+                    {
+                        $('#z').css("opacity", 0);
+                        //$('#z').css("width", "60px")
+                    }
+                    if (index == 10)
+                    {
+                        $('#d').css("opacity", 0);
+                        //$('#d').css("width", "60px")
+                    }
+                }
+            });
+
+            $(window).resize(autoScrolling);
+
+            function autoScrolling()
+            {
+                var $ww = $(window).width();
+                if ($ww > 768)
+                    $.fn.fullpage.setAutoScrolling(true);
+                else
+                    $.fn.fullpage.setAutoScrolling(true);
+            }
+            autoScrolling();
+        });
+
+
+    </script>
+    <script>
+        var descContent = "Onchain小蚁正在招募创始团队";
+        var imgUrl = 'http://www.onchain.com/recruit/wx.jpg';
+        var lineLink = 'http://www.onchain.com/r.html';
+        var shareTitle = '国内首个正在改变世界的区块链黑科技公司，你来吗？';
+        var appid = 'wxc9937e3a66af6dc8';
+
+        function shareFriend()
+        {
+            WeixinJSBridge.invoke('sendAppMessage', {
+                "appid": appid,
+                "img_url": imgUrl,
+                "img_width": "640",
+                "img_height": "640",
+                "link": lineLink,
+                "desc": descContent,
+                "title": shareTitle
+            }, function (res)
+            {
+                _report('send_msg', res.err_msg);
+            })
+        }
+
+
+        function shareTimeline()
+        {
+            WeixinJSBridge.invoke('shareTimeline', {
+                "img_url": imgUrl,
+                "title": shareTitle,
+                "img_width": "640",
+                "img_height": "640",
+                "link": lineLink,
+                "desc": descContent
+            }, function (res)
+            {
+            });
+        }
+        function shareWeibo()
+        {
+            WeixinJSBridge.invoke('shareWeibo', {
+                "content": descContent,
+            }, function (res)
+            {
+            });
+        }
+        // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady()
+        {
+            // 发送给好友
+            WeixinJSBridge.on('menu:share:appmessage', function (argv)
+            {
+                shareFriend();
+            });
+            // 分享到朋友圈
+            WeixinJSBridge.on('menu:share:timeline', function (argv)
+            {
+                shareTimeline();
+            });
+            // 分享到微博
+            WeixinJSBridge.on('menu:share:weibo', function (argv)
+            {
+                shareWeibo();
+            });
+        }, false);
+
+    </script>
+    <script>
+        var audioStatus = "playing";
+        var audio = document.getElementById("audio");
+        audio.addEventListener("playing", function ()
+        {
+            audioStatus = "playing";
+        });
+        audio.addEventListener("pause", function ()
+        {
+            audioStatus = "paused";
+        });
+        function change()
+        {
+            var audio = document.getElementById("audio");
+            if (audioStatus == "playing")
+            {
+                audio.pause();
+                document.getElementsByTagName("button")[0].innerText = "▶";
+            } else
+            {
+                audio.play();
+                document.getElementsByTagName("button")[0].innerText = "||";
+            }
+        }
+
+    </script>
+
+    <script>
+        if (location.host && location.host.indexOf("onchain") > 0)
+        {
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?47272c13c0abf3c8db0b847218461ddd";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+    }
+        console.log("有什么执着可以直击未来？\n有什么技术可以改变世界？\n我们站在全球的起跑线上，\n区块链技术颠覆当下；\nOnchain/小蚁招募创始团队；\n加入onchain，加入小蚁，你，可以改变世界。\n"); 
+		console.log("请将简历发送至 erik@onchain.com（邮件标题请以 “姓名-技术-来自console” 命名）");
+    </script>
+
+</body>
+</html>

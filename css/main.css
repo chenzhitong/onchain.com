@@ -13,8 +13,8 @@
 
 body {
   font-family: 'Microsoft YaHei';
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 2;
   color: #666;
   background-color: #fff;
 }
@@ -24,12 +24,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 26px;
+  margin-bottom: 30px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .parallax {
@@ -135,12 +135,6 @@ section {
 }
 
 #home-slider .caption {
-  position: absolute;
-  top: 50%;
-  margin-top: -104px;
-  left: 0;
-  right: 0;
-  text-align: center;
   z-index: 15;
   font-size: 18px;
   font-weight: 300;
@@ -148,8 +142,7 @@ section {
 }
 
 #home-slider .caption img {
-  width:600px; 
-  max-width:90%;
+  width:600px;
 }
 
 .caption .btn-start {
@@ -166,7 +159,6 @@ section {
 }
 
 .carousel-fade .carousel-inner .item {
-  opacity: .8;
   -webkit-transition-property: opacity;
   transition-property: opacity;
   background-repeat: no-repeat;
@@ -263,7 +255,7 @@ section {
 .navbar-right li a {
   color: #fff;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -293,6 +285,27 @@ section {
   transition: background-color 0.2s ease;
 }
 
+.our-services .col-sm-6:hover .service-icon {
+  background-color: #333;
+}
+
+.our-services .col-sm-6:nth-child(1) {
+  border-right:1px solid #f2f2f2;
+  border-bottom:1px solid #f2f2f2;
+  padding-bottom: 50px;
+}
+.our-services .col-sm-6:nth-child(2) {
+  border-bottom:1px solid #f2f2f2;
+  padding-bottom: 50px;
+}
+
+.our-services .col-sm-6:nth-child(4), 
+.our-services .col-sm-6:nth-child(5), 
+.our-services .col-sm-6:nth-child(6) {
+  border-bottom:0;
+  padding-top: 60px;
+}
+
 .our-services .col-sm-4:hover .service-icon {
   background-color: #333;
 }
@@ -303,9 +316,7 @@ section {
   padding-bottom: 50px;
 }
 
-.our-services .col-sm-4:nth-child(4), 
-.our-services .col-sm-4:nth-child(5), 
-.our-services .col-sm-4:nth-child(6) {
+.our-services .col-sm-4 {
   border-bottom:0;
   padding-top: 60px;
 }
@@ -322,23 +333,23 @@ section {
 /*************************
 ********About CSS*******
 **************************/
-#about-us {
+#vision {
   background-image: url(../images/about-bg.jpg);
   background-color:#4a3d34;
-  padding: 60px 0;
+  padding: 90px 0;
 }
 
-#about-us h2 {
+#vision h2 {
   margin-top: 0;
   color: #fff;
 }
 
-#about-us .lead {
+#vision .lead {
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-#about-us h1 {
+#vision h1 {
   margin-bottom: 30px;
 }
 
@@ -497,9 +508,6 @@ section {
 /*************************
 *********Team CSS*********
 **************************/
-#team {
-  padding-top: 0;
-}
 
 .team-members {
   margin-bottom: 25px;
@@ -563,6 +571,8 @@ section {
 #team .img-responsive {
   width: 100%;
 }
+
+#team p, #team li { padding:0 20px }
 
 .member-info h3 {
   margin-top: 35px;
@@ -652,30 +662,24 @@ section {
 }
 
 /*************************
-********Twitter CSS*******
+********dlf CSS*******
 **************************/
-#twitter {
-  background-image: url(../images/twitter-bg.jpg);
-  background-color: #434248;
+#dlf {
+  position:relative;
 }
 
-#twitter > div {
-  text-align: center;
-  position: relative;
-}
-
-#twitter-carousel {
+#dlf-carousel {
   position: relative;
   z-index: 15
 }
 
-.twitter-icon {
+.dlf-icon {
   position: relative;
   z-index: 15;
   color: #fff;
 }
 
-.twitter-icon .fa-twitter {
+.dlf-icon .fa-twitter {
   font-size: 24px;
   height: 64px;
   width: 64px;
@@ -684,7 +688,7 @@ section {
   position: relative;
 }
 
-.twitter-icon .fa-twitter:after {
+.dlf-icon .fa-twitter:after {
   position: absolute;
   content: "";
   border-width: 8px;
@@ -693,22 +697,22 @@ section {
   bottom: -14px;
 }
 
-#twitter-carousel .item {
-  padding: 0 55px;
+#dlf-carousel .item {
+  padding: 0 0 0 55px;
 }
 
-#twitter-carousel .item a {
+#dlf-carousel .item a {
   color: #fff;
 }
 
-.twitter-icon h4 {
+.dlf-icon h4 {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #fff;
 }
 
-.twitter-left-control, 
-.twitter-right-control {
+.dlf-left-control, 
+.dlf-right-control {
   position: absolute;
   top: 50%;
   color: #fff;
@@ -722,11 +726,11 @@ section {
   z-index: 15
 }
 
-.twitter-left-control {
+.dlf-left-control {
   left: 80px;
 } 
 
-.twitter-right-control {
+.dlf-right-control {
   right: 80px
 }
 
@@ -958,13 +962,74 @@ ul.address {
 
 p.fadeInRightBig { letter-spacing:20px }
 
-.onchain-logo { width:140px; }
+.onchain-logo { width:170px; }
 
 .ant-logo { width:48px; margin-top:-10px }
 
 .bsicon { font-size: 64px; vertical-align: -10px }
 
-.ant-logo2 { width:50px; margin-top:-30px }
+.ant-logo2 { width:350px; margin:auto }
 
-.carousel-inner .item { height:50px }
+.carousel-inner .item { height:200px }
 
+#dlf p { line-height:2; margin-bottom:20px; text-align:left }
+
+.block { display:block; background-color:#2b497d; width:250px; margin:25px 0 10px; padding:10px 10px; color:white; font-size:20px }
+
+#team ul { list-style:none; padding-left:0 }
+
+body{
+	-webkit-transition: background-color 400ms ease-in-out;
+	-ms-transition: background-color 400ms ease-in-out;
+	-o-transition: background-color 400ms ease-in-out;
+	-moz-transition: background-color 400ms ease-in-out;
+	transition: background-color 400ms ease-in-out;
+}
+.caption {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+#output {
+	width: 100%;
+	max-height: 100%;
+	-webkit-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+.home-center-div { position:absolute; width:100%; top:50%; height:300px; margin-top:-220px; text-align:center  }
+
+#output canvas { opacity: 0.3; position:absolute; margin-top:-150px; width:600px; height:300px; margin-left:-300px; max-width:100%; max-height:100%; top:50%; left:50%; }
+#home-slider #output img { visibility:hidden; width:100% }
+#home-slider { background-image:url("../images/slider/4.jpg"); background-position:center; background-size:cover }
+.logo-bg {  position:absolute; top:50%; left:50%;  margin-top:-150px; width:599px; margin-left:-300px; max-width:100%; }
+.bg-1 { background-color:#2b497d; }
+.bg-2 { background-color:#3481c5; }
+.bg-1 img, .bg-2 img { visibility:hidden; max-width:99.5% }
+.logo-mask { position:absolute; margin-top:-150px; margin-left:-300px; max-width:100%; top:50%; left:50%; }
+
+
+@media only screen and (max-width: 620px) {
+    #home-slider .caption img, #output canvas, .logo-bg { margin-left: 0px; left: 0; }
+    .logo-mask { position: absolute; margin-top: -150px; margin-left: -300px; max-width: 100%; top: 50%; left: 50%; }
+    #output canvas { height:240px }
+}
+@media only screen and (max-width: 580px) {
+    #output canvas { height:215px }
+}
+@media only screen and (max-width: 470px) {
+    #output canvas { height:180px }
+}
+@media only screen and (max-width: 380px) {
+    #output canvas { height:140px }
+}
+@media only screen and (max-width: 310px) {
+    #output canvas { height:110px }
+}
+
+
+#vision p { margin-bottom:20px  }
+#dna { padding:30px }
+section .container > img { margin:auto; width:100% }

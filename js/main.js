@@ -18,10 +18,10 @@
 	$(window).on('scroll', function(){
 		if( $(window).scrollTop()>slideHeight ){
 		    $('.main-nav').addClass('navbar-fixed-top');
-		    $('#services').css("padding-top", 170);
+		    $('#vision').css("padding-top", 170);
 		} else {
 		    $('.main-nav').removeClass('navbar-fixed-top');
-		    $('#services').css("padding-top", 90);
+		    $('#vision').css("padding-top", 90);
 		}
 	});
 	
@@ -31,7 +31,7 @@
 	});
 
 	$('.navbar-collapse ul li a').on('click', function() {  
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 500);
 		return false;
 	});
 
@@ -136,25 +136,25 @@
 		});
 	});
 	
-    //百度地图API功能
-	var map = new BMap.Map("baidumap");            // 创建Map实例
-	var point = new BMap.Point(121.50411, 31.29715); // 创建点坐标
-	map.centerAndZoom(point, 17);
-    //map.enableScrollWheelZoom();                 //启用滚轮放大缩小
-	var marker = new BMap.Marker(point);  // 创建标注
-	map.addOverlay(marker);              // 将标注添加到地图中
-	var opts = {
-	    width: 200,     // 信息窗口宽度
-	    height: 100,     // 信息窗口高度
-	    title: "onchain", // 信息窗口标题
-	    enableMessage: true,//设置允许信息窗发送短息
-	    message: "onchain - 小蚁系统与区块链定制开发"
-	}
-	var infoWindow = new BMap.InfoWindow("地址：上海市虹口区松花江路2601号8幢A区103办公室", opts);  // 创建信息窗口对象 
-	marker.addEventListener("click", function ()
-	{
-	    map.openInfoWindow(infoWindow, point); //开启信息窗口
-	});
+    ////百度地图API功能
+	//var map = new BMap.Map("baidumap");            // 创建Map实例
+	//var point = new BMap.Point(121.5168, 31.31155); // 创建点坐标
+	//map.centerAndZoom(point, 17);
+    ////map.enableScrollWheelZoom();                 //启用滚轮放大缩小
+	//var marker = new BMap.Marker(point);  // 创建标注
+	//map.addOverlay(marker);              // 将标注添加到地图中
+	//var opts = {
+	//    width: 200,     // 信息窗口宽度
+	//    height: 100,     // 信息窗口高度
+	//    title: "onchain", // 信息窗口标题
+	//    enableMessage: true,//设置允许信息窗发送短息
+	//    message: "onchain - 小蚁系统与区块链定制开发"
+	//}
+	//var infoWindow = new BMap.InfoWindow("地址：上海市杨浦区伟成路70号创智天地企业中心1号楼701室", opts);  // 创建信息窗口对象 
+	//marker.addEventListener("click", function ()
+	//{
+	//    map.openInfoWindow(infoWindow, point); //开启信息窗口
+	//});
 });
 
 

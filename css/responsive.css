@@ -36,13 +36,13 @@
 @media (max-width: 767px) {
 	body {
 		font-size: 14px;
+        line-height: 1.5;
 	}
 	#home-slider .caption h1 {
 		font-size: 40px;
 	}
 	#home-slider .caption {
 		font-size: 15px;
-		padding: 0 30px;
 	}
 	.left-control, .right-control {
 		font-size: 20px;
@@ -90,7 +90,26 @@
 	.service-info h3 {
 		font-size: 20px;
 	}
-	.our-services .col-sm-4 {
+	.our-services .col-sm-6 {
+		margin-bottom: 32px;
+		padding-bottom: 20px;
+	}
+	.our-services .col-sm-6:nth-child(4), 
+	.our-services .col-sm-6:nth-child(5), 
+	.our-services .col-sm-6:nth-child(6) {
+		padding-top: 0;
+	}
+	.service-icon {
+		font-size: 30px;
+		height: 100px;
+		line-height: 100px;
+		width: 100px;
+	}
+	.our-services .col-sm-4:hover .service-icon:before {
+		height: 90px;
+		width: 90px;
+	}
+    	.our-services .col-sm-4 {
 		margin-bottom: 32px;
 		padding-bottom: 20px;
 	}
@@ -110,7 +129,6 @@
 		width: 90px;
 	}
 	.about-info {
-		text-align: center;
 		margin-bottom: 50px;
 	}
 	.team-member {
@@ -213,10 +231,11 @@
 	.footer-bottom p.pull-right {
 		float: none !important;
 	}
-    .carousel-inner .item { height:75px }
+    .carousel-inner .item { height:180px }
     .navbar-right li a { padding-left:0; padding-right:0; text-align:center; margin:auto; width:80% }
     .navbar-nav { margin-left:0; margin-right:0 }
-
+    #dlf-carousel .item { padding: 0 55px; }
+    #dlf p { line-height:1.5 }
 }
 
 /* XS Portrait */
@@ -229,7 +248,10 @@
 		width:100%;
 		float: none;
 	}
+    .home-center-div { margin-top:-180px }
 }
 @media only screen and (max-width: 500px){
-    .carousel-inner .item { height:95px }
+    .carousel-inner .item { height:200px }
+    #vision { padding-bottom:30px }
+    #vision ul { padding-left:10px }
 }

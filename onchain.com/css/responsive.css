@@ -75,11 +75,16 @@
 		padding-bottom: 8px;
 		padding-top: 10px;
 	}
-
+    .our-services .col-sm-4 { padding-top:0 }
+    .service-info h3 { margin-top:20px }
+    .our-services :nth-child(1).col-sm-6,.our-services :nth-child(2).col-sm-6 { border:none }
 	/*services*/
 	section {
 		padding: 45px 0;
 	}
+    section#cooperate {
+        padding-bottom: 20px;
+    }
 	.heading {
 		font-size: 14px;
 		padding-bottom: 45px;
@@ -236,8 +241,18 @@
     .navbar-nav { margin-left:0; margin-right:0 }
     #dlf-carousel .item { padding: 0 55px; }
     #dlf p { line-height:1.5 }
+    .main-wrap .element { margin-left: 20px; }
+    .main-wrap .bg-circle { margin-top: 0px; }
 }
 
+@media only screen and (max-width: 500px){
+    .carousel-inner .item { height:200px }
+    #vision { padding-bottom:30px }
+    #vision ul { padding-left:10px }
+    .main-wrap .info-wrap { width: 80%; }
+    .main-wrap .version-date { width: 20%; }
+
+}
 /* XS Portrait */
 @media (max-width: 479px) {
   
@@ -249,9 +264,9 @@
 		float: none;
 	}
     .home-center-div { margin-top:-180px }
-}
-@media only screen and (max-width: 500px){
-    .carousel-inner .item { height:200px }
-    #vision { padding-bottom:30px }
-    #vision ul { padding-left:10px }
+    .main-wrap .text-wrap { margin-left:20px; padding-bottom:px }
+    .main-wrap .info-wrap { width: 75%; }
+    .main-wrap .version-date { width: 25%; }
+    .main-wrap .element { margin-left:10px }
+
 }

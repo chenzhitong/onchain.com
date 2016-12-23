@@ -5,7 +5,7 @@
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
-
+    .dna-block2 { width:1em; }
 }
 
 /* sm */
@@ -243,6 +243,9 @@
     #dlf p { line-height:1.5 }
     .main-wrap .element { margin-left: 20px; }
     .main-wrap .bg-circle { margin-top: 0px; }
+    #vision p { margin-bottom:10px }
+    #dna h3, #jifen h3 { font-size:16px; margin-top:20px }
+    #dna h2, #jifen h2 { margin-bottom:20px }
 }
 
 @media only screen and (max-width: 500px){
@@ -251,7 +254,7 @@
     #vision ul { padding-left:10px }
     .main-wrap .info-wrap { width: 80%; }
     .main-wrap .version-date { width: 20%; }
-
+    .dna-block2 { width:1em; }
 }
 /* XS Portrait */
 @media (max-width: 479px) {
@@ -268,5 +271,6 @@
     .main-wrap .info-wrap { width: 75%; }
     .main-wrap .version-date { width: 25%; }
     .main-wrap .element { margin-left:10px }
+    .dna-block2 { width:0; }
 
 }

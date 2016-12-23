@@ -21,6 +21,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333;
+  line-height:1.5
 }
 
 h2 {
@@ -38,6 +39,7 @@ h3 {
   background-position: center;
   background-attachment: fixed;
 }
+#dlf.parallax { background-attachment:initial }
 
 .parallax,
 .parallax h1,
@@ -1013,8 +1015,9 @@ body{
 .bg-2 { background-color:#3481c5; }
 .bg-1 img, .bg-2 img { visibility:hidden; max-width:99.5% }
 .logo-mask { position:absolute; margin-top:-150px; margin-left:-300px; max-width:100%; top:50%; left:50%; }
-
-
+.main-color,.main-color h1, .main-color h2, .main-color h3, .main-color h4, .main-color h5 { color:#2b497d; }
+.dna-block1 { display:inline-block; height:40px;vertical-align: -10px;margin-right:.5em; background-color: rgb(46,82,156); width:1em; }
+.dna-block2 { display:inline-block; height:40px;vertical-align: -10px;margin-left:.5em; background-color: rgb(46,82,156); width:3em; }
 @media only screen and (max-width: 620px) {
     #home-slider .caption img, #output canvas, .logo-bg { margin-left: 0px; left: 0; }
     .logo-mask { position: absolute; margin-top: -150px; margin-left: -300px; max-width: 100%; top: 50%; left: 50%; }
@@ -1035,7 +1038,7 @@ body{
 
 
 #vision p { margin-bottom:20px  }
-#dna { padding:30px 0 }
+
 section .container > img { margin:auto; width:100% }
 
 .main-wrap .element {

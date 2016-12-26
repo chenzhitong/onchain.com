@@ -4,10 +4,11 @@ a,
 #footer .footer-bottom, 
 #single-portfolio .close-folio-item:hover, 
 .single-table.featured .btn.btn-primary, 
-.contact-info ul li a:hover, 
 #footer .footer-bottom a  {
   color: #2B497D;
 }
+
+.contact-info ul li a:hover { color:#2098D1 }
 
 .btn.btn-primary:hover,
 .btn-submit:hover {
@@ -30,7 +31,6 @@ a:hover, a:focus {
 .btn-loadmore:hover, 
 .btn-submit,
 #footer, 
-.caption .btn-start:hover, 
 .left-control:hover, 
 .right-control:hover, 
 .folio-overview a:hover {
@@ -43,7 +43,6 @@ a:hover, a:focus {
 	border: 1px solid #2B497D;
 }
 
-.caption .btn-start:hover, 
 .left-control:hover, 
 .right-control:hover {
 	border-color: #2B497D;

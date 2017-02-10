@@ -22,10 +22,10 @@
         .we { top:50% }
         .first { font-size:18px; position:absolute; width:85%; left:12%; bottom:10%; text-align:left; line-height:1.5 }
         .first div { margin:12px 0 }
-        .h5title { position:absolute; top:40%; left:8%; width:80% }
+        .h5title { position:absolute; top:50%; left:8%; width:80% }
         .h5title h2 { line-height:2; }
         .xz { font-size:18px; margin-top:150px; line-height:2; letter-spacing:2px }
-        .li { font-size:18px; margin-top:-100px; padding-left:10%; text-align:left; line-height:1.5 }
+        .li { font-size:16px; margin-top:-100px; padding-left:10%; text-align:left; line-height:1.8 }
         .xz span { font-size:22px; margin:0 2px;  color:#01a4e7  }
         .world { position:absolute; width:100%; text-align:center; bottom:10%; line-height:1.5 }
         .world2 { position:absolute; width:100%; text-align:center; bottom:20%; line-height:1.5 }
@@ -45,9 +45,7 @@
             .website { bottom: 10px; }
             .bottom-img { position:absolute; z-index:0; bottom:0; left:auto; right:0; width:60%; }
             .title { top:30%; left:10%; width:auto }
-            .foto { display:none }
             .top-img { margin-top:-100px }
-            .h5title { bottom:30%; top:auto }
             .title.we { bottom:20%; top:auto; width:100%; text-align:center; left:0 }
             .first { line-height:1; font-size:14px; bottom:10px }
             .xz { line-height:1.5; }
@@ -58,7 +56,6 @@
         }
         @media only screen and (max-height:400px) {
             .first { display:none }
-            .h5title { bottom:20%; top:auto }
             .title { top:10%; left:10%; width:auto }
             .title.we { bottom:30px; top:auto; width:100%; text-align:center; left:0 }
             .top-img.oaa { top: 15% }
@@ -70,17 +67,16 @@
     </style>
 </head>
 <body style="background-color:#ddd;">
-    <audio id="audio" autoplay="autoplay" controls="controls" loop="loop" preload="auto" style="display:none" src="recruit/Indigo.mp3">*你的浏览器不支持audio标签</audio>
+    <audio id="audio" autoplay="autoplay" controls="controls" loop="loop" preload="auto" style="display:none" src="recruit/Pure Imagination.mp3">*你的浏览器不支持audio标签</audio>
     <!--<button onclick="change()">||</button>-->
     
     <div id="recruit">
 
         <div class="section">
-            <div class="h5title">
-                <span style="font-size:30px; letter-spacing:5px">Onchain/小蚁<br />招募创始团队</span>
-            </div>
             <img class="top-img" src="recruit/wx.png" style="width:80%; top:0; left:8%" />
-            <img class="bottom-img foto" src="recruit/photo.png" style="width:92%; bottom:0; left:4%" />
+            <div class="h5title">
+                <span style="font-size:30px; letter-spacing:5px">Onchain<br />招募团队成员</span>
+            </div>
         </div>
 
         <div class="section">
@@ -121,7 +117,7 @@
         
         <div class="section">
             <div class="title cs">
-                <h2 style="color:#01a4e7">成为onchain的<br />创始团队成员</h2>
+                <h2 style="color:#01a4e7">成为onchain的<br />团队成员</h2>
             </div>
             <div class="xz">
                 <span>高于行业30%</span>的薪资<br />
@@ -134,66 +130,59 @@
 
         <div class="section">
             <div class="title ifyou">
-                <h3>如果你精于以下任意一项：</h3><br />
+                <h3>区块链核心开发工程师</h3><br />
             </div>
             <img class="bottom-img" src="recruit/nr2.png" style="max-width:100%" />
             <img id="img_nr" class="bottom-img" src="recruit/nr.png" style="max-width:100%" />
-            <div class="li">
-                ● 区块链技术<br />
-                ● 云/分布式系统/一致性算法<br />
-                ● 密码学和计算机安全<br />
-                ● 金融IT架构设计<br />
-                ● UI设计与交互<br />
-                那么你是我们在寻找的<br />
-                <h3 id="js">技术牛人~~</h3>
+            <div class="li" style="padding-right:40px">
+                ● 熟悉Go、C、C++、Java、C#语言中的一种或多种<br />
+                ● 熟悉分布式系统、P2P网络、密码学、编译原理、区块链技术中的一种或多种<br />
+                ● 工作地点：上海、北京<br />
             </div>
             
         </div>
-
         <div class="section">
             <div class="title ifyou">
-                <h3>如果你精于以下任意一项：</h3><br />
+                <h3>资深密码学安全工程师</h3><br />
+            </div>
+            <img class="bottom-img" src="recruit/nr2.png" style="max-width:100%" />
+            <img id="img_nr2" class="bottom-img" src="recruit/nr.png" style="max-width:100%" />
+            <div class="li" style="padding-right:40px">
+                ● 精通常用密码学算法， 协议原理及其实现， 跟踪研究应用密码学前沿技术；<br />
+                ● 能够针对区块链系统和其应用场景设计优化加解密及隐私保护方案；<br />
+                ● 有良好密码学相关数学基础研究背景。<br />
+                ● 数学或密码学专业的博士优先<br />
+            </div>
+
+        </div>
+        <div class="section">
+            <div class="title ifyou">
+                <h3>UI设计师</h3><br />
             </div>
             
             <img class="bottom-img" src="recruit/gl2.png" style="max-width:100%" />
             <img id="img_gl" class="bottom-img" src="recruit/gl.png" style="max-width:100%;" />
             <div class="li">
-                ● 面向金融机构的商务拓展<br />
-                ● 深刻的行业分析和写作能力<br />
-                ● 品牌、市场与公共关系<br />
-                ● 互联网社区的运营发展<br />
-                那么你是我们在寻找的<br />
-                <h3 id="gl">管理达人~~</h3>
+                ● 熟练的图形软件驾驭能力<br />
+                ● 扎实的视觉设计表现力<br />
+				● 制作原型图<br />
+                ● 关注用户体验<br />
+                ● 投递简历请附上个人作品<br />
+                ● 工作地点：上海<br />
             </div>
         </div>
 
 
         <div class="section">
             <div class="title ifyou hi">
-                <h3>CEO/CTO等你Say Hi！</h3>
+                <h3>HR等你Say Hi！</h3>
             </div>
             <br />
-            <div style="font-size:16px; margin-bottom:10px">技术牛人请私聊CTO张铮文</div>
+            <div style="font-size:16px; margin-bottom:10px">应聘请私聊 HR Cathy</div>
             <div class="qrdiv">
                 <img class="qr" id="z" src="recruit/z.png" />
             </div>
-            <div style="font-size:16px;">E-mail: <a href="mailto:erik@onchain.com">erik@onchain.com</a></div>
-            <!--<div class="website">
-                管理达人请看下一页
-            </div>-->
-        </div>
-
-        <div class="section">
-            <div class="title ifyou hi">
-                <h3>CEO/CTO等你Say Hi！</h3>
-            </div>
-            <br />
-            <div style="font-size:16px; margin-bottom:10px">管理达人请私聊CEO达鸿飞</div>
-            <div class="qrdiv">
-                <img class="qr" id="d" src="recruit/d.png" />
-            </div>
-            <div style="font-size:16px">E-mail: <a href="mailto:dahongfei@onchain.com">dahongfei@onchain.com</a></div>
-
+            <div style="font-size:16px;">E-mail: <a href="mailto:hr@onchain.com">hr@onchain.com</a></div>
         </div>
 
         <div class="section">
@@ -203,7 +192,7 @@
             </div>
             <div class="website">
                 公司：<a target="_blank" href="http://www.onchain.com">www.onchain.com</a><br />
-                小蚁：<a target="_blank" href="https://www.antshares.com">www.antshares.com</a>
+                小蚁：<a target="_blank" href="https://www.antshares.org">www.antshares.org</a>
             </div>
         </div>
     </div>
@@ -222,23 +211,23 @@
                     }
                     if (index == 7)
                     {
-                        $("#js").css("opacity", 1);
                         $("#img_nr").delay(100).css("opacity", 1);
                     }
                     if (index == 8)
                     {
-                        $("#gl").css("opacity", 1);
-                        $("#img_gl").delay(100).css("opacity", 1);
+                        $("#img_nr2").delay(100).css("opacity", 1);
                     }
                     if (index == 9)
                     {
-                        $('#z').css("opacity", 1);
-                        //$('#z').css("width", "200px")
+                        $("#img_gl").delay(100).css("opacity", 1);
                     }
                     if (index == 10)
                     {
+                        $('#z').css("opacity", 1);
+                    }
+                    if (index == 11)
+                    {
                         $('#d').css("opacity", 1);
-                        //$('#d').css("width", "200px")
                     }
                 },
                 onLeave: function (index, direction)
@@ -248,23 +237,23 @@
                     }
                     if (index == 7)
                     {
-                        $("#js").delay(100).css("opacity", 0);
                         $("#img_nr").delay(100).css("opacity", 0);
                     }
                     if (index == 8)
                     {
-                        $("#gl").delay(100).css("opacity", 0);
-                        $("#img_gl").delay(100).css("opacity", 0);
+                        $("#img_nr2").delay(100).css("opacity", 0);
                     }
                     if (index == 9)
                     {
-                        $('#z').css("opacity", 0);
-                        //$('#z').css("width", "60px")
+                        $("#img_gl").delay(100).css("opacity", 0);
                     }
                     if (index == 10)
                     {
+                        $('#z').css("opacity", 0);
+                    }
+                    if (index == 11)
+                    {
                         $('#d').css("opacity", 0);
-                        //$('#d').css("width", "60px")
                     }
                 }
             });

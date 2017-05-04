@@ -1142,12 +1142,12 @@ section .container > img { margin:auto; width:100% }
     clear: both;
 }
 
-.cd-timeline-content h2 {
+.cd-timeline-content h2, .cd-timeline-content h2 a {
     color: #303e49;
     font-size:16px;
     margin:0;
 }
-
+.cd-timeline-content h2 a:hover, .cd-timeline-content h2 a:focus{color:#027db3}
 .cd-timeline-content p {
     margin: 1em 0;
     line-height: 1.6;

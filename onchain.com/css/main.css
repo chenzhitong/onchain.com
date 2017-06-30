@@ -1065,8 +1065,8 @@ section .container > img { margin:auto; width:100% }
 
 #cd-timeline {
     position: relative;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .cd-container::after {
     content: "";
